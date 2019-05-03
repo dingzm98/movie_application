@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="IMDb.css">
+	<title>IMDb</title>
+</head>
+<body>
+	<div id="userInput">   
+		<span>Search Movie: </span>
+        <input id="textinput" type="text" name="search" placeholder="Search..">
+        <input  id="submitButton" type="submit" name="submit" onclick="callAPI()">
+    </div>
+    <div id="title" style="text-align: center">
+    	<span id="movie" style="font-weight:bold">Movie Title: undefined</span>
+    </div>
+	<div class="container">
+		<img src="images/no_photo.jpg">
+	</div>
+	<table style="width:100%" id="t01">
+  <tr>
+    <td>Title</th>
+    <td id="name"></th> 
+
+  </tr>
+  <tr>
+    <td>Year</td>
+    <td id="year"></td>
+
+  </tr>
+  <tr>
+    <td>IMDb Rating</td>
+    <td id="score"></td>
+
+  </tr>
+  <tr>
+    <td>Runtime</td>
+    <td id="runtime"></td>
+
+  </tr>
+  <tr>
+    <td>Rating</td>
+    <td id="rating"></td>
+
+  </tr>
+  <tr>
+    <td>Production</td>
+    <td id="production"></td>
+
+  </tr>
+</table>
+    <script type="text/javascript" src="IMDb.js"></script>
+    
+</body>
+</html>

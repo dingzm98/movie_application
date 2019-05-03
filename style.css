@@ -1,0 +1,46 @@
+* {
+    background-color:cornsilk;
+}
+
+h1 {
+    text-align: center;
+}
+
+img{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 150px;
+    height: 200px;
+}
+
+#desc {
+    border: 2px solid red;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#userInput {
+    padding: 5%;
+}
+
+#textinput {
+    margin-left: 40%;
+    height: 30px;
+    width: 250px;
+}
+
+#submitButton {
+    height: 30px;
+    width: 100px;
+}
+
+#movieImg {
+    border: 2px solid black;
+    width: 35%;
+    margin-left: 35%;
+    height: 300px;
+    text-align: center;
+    padding: 4%;
+} 
+

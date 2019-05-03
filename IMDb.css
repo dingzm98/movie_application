@@ -1,0 +1,62 @@
+img{
+	border: 2px solid black;
+	border-radius: 20px;
+	opacity: 0.75;
+	transition: 0.2s ease-in-out;
+	width: 150px;
+	height: 200px;
+}
+
+input[type=text] {
+  width: 50px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 20%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table#t01 {
+  width: 100%; 
+  background-color: #ffffff;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#t01 th {
+  color: white;
+  background-color: black;
+}
+
+.container{
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 300;
+}
+
+.title{
+	text-align: center;
+}
+
+.movietitle{
+	text-align: center;
+}
+
+.title h3{
+	text-align: center;
+}
+
+img:hover{
+	opacity: 1;
+}

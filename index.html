@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSCE 315 </title>
+	<meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Waiting+for+the+Sunrise" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link type="text/css" href="style.css" rel="stylesheet" >
+</head>
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+            <li class="breadcrumb-item active" aria-current="page">Movie</li>
+            <li class="breadcrumb-item active" aria-current="page">Soundtrack</li>
+        
+        </ol>
+    </nav>
+    <h1> The Box Office </h1>
+    <div id="desc">   
+            <p>Have you ever wondered what songs are in a movie you recently saw, or where you can watch the latest box office breaking movie?</p>
+    </div>
+    <div id="userInput">   
+    
+    <div>   
+        <input id="textinput" type="text" >
+        <input  id="submitButton" type="submit" name="submit" onclick="callAPI(); searchItunes()">
+    </div>
+    </div>
+    <div id="movieImg">
+        <img src="images/no_photo.jpg">
+    </div>
+    <div>
+        <h2>Movie Info:</h2>
+    </div>
+    <div id="movieInfo">
+        
+    </div>
+    <div>
+        <h2>Suggested Songs:</h2>
+    </div>
+    <div id="songList">
+        
+    </div>
+    <div>   
+        <input id="location" type="text" >
+        <input  id="submitButton" type="submit" name="submit" onclick=" cinema();">
+    </div>
+    <div>
+            <h2>Suggested Movie Locations:</h2>
+    </div>
+    <div id="locationList">
+        <li>
+            <ul>Suggested locations rendered from YELP API</ul>
+             <div id="cinema 1"></div>
+            <ul>Suggested locations rendered from YELP API</ul>
+            <div id="cinema 2"></div>
+            <ul>Suggested locations rendered from YELP API</ul>
+            <div id="cinema 3"></div>
+        </li>
+            
+    </div>
+    
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="IMDb.js"></script>
+    <script type="text/javascript" src="search.js"></script>
+
+</body>
+</html>
