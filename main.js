@@ -3,7 +3,7 @@ console.log("testing");
 
 function searchItunes() {
     console.log(input.value);
-    fetch('https://itunes.apple.com/search?term=' + input.value + "&limit=10")
+    fetch('https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search?term=' + input.value + "&limit=10")
     .then(
         function(response) {
             if (response.status !== 200) {
