@@ -29,7 +29,53 @@ $.ajax(settings).done(function (response) {
   let address = document.createElement('elem');
         address.innerHTML = "<br>" + "Rating: " + response.businesses[0].rating;
 
+  let phone = document.createElement('elem');
+        phone.innerHTML = "<br>" + "Phone:" + response.businesses[0].phone + "<br>";  
+
+
   divSection.appendChild(name);
   divSection.appendChild(address);
+  divSection.appendChild(phone);
+
+//---------------------------------------------------------------------
+   var img2 = document.createElement("img");
+	img2.setAttribute('src', response.businesses[1].image_url);
+	img2.setAttribute('alt', 'na');
+	divSection.appendChild(img2);
+
+  let name2 = document.createElement('elem');
+        name2.innerHTML = "<br>" + "name:" + response.businesses[1].name;
+        
+  let address2 = document.createElement('elem');
+        address2.innerHTML = "<br>" + "Rating: " + response.businesses[1].rating;
+
+  let phone2 = document.createElement('elem');
+        phone2.innerHTML = "<br>" + "Phone: " + response.businesses[1].phone + "<br>";  
+
+
+  divSection.appendChild(name2);
+  divSection.appendChild(address2);
+  divSection.appendChild(phone2);
+
+
+  //---------------------------------------------------------------------
+   var img3 = document.createElement("img");
+	img3.setAttribute('src', response.businesses[2].image_url);
+	img3.setAttribute('alt', 'na');
+	divSection.appendChild(img3);
+
+  let name3 = document.createElement('elem');
+        name3.innerHTML = "<br>" + "name:" + response.businesses[2].name;
+        
+  let address3 = document.createElement('elem');
+        address3.innerHTML = "<br>" + "Rating: " + response.businesses[2].rating;
+
+  let phone3 = document.createElement('elem');
+        phone3.innerHTML = "<br>" + "Phone: " + response.businesses[2].phone + "<br>";  
+
+
+  divSection.appendChild(name3);
+  divSection.appendChild(address3);
+  divSection.appendChild(phone3);
 });
 }

@@ -6,16 +6,22 @@ console.log(year);
 function callAPI(){
     $.getJSON('http://www.omdbapi.com/?t='+ input.value + '&apikey=94ef0bff').then(function(response){
         console.log(response);
-        var image = response.Poster;
-        if(image != "N/A"){
-            $('img').attr('src', image);
-        }
+        // var image = response.Poster;
+        // if(image != "N/A"){
+        //     $('img').attr('src', image);
+        // }
+
         let movieInfo = document.querySelector("#movieInfo");
         movieInfo.innerHTML = "";
 
         let divSection = document.createElement('div');
         movieInfo.setAttribute('class', 'movie');
         movieInfo.appendChild(divSection);
+
+        var image = document.createElement("img");
+        image.setAttribute('src', response.Poster);
+        image.setAttribute('alt', 'na');
+        divSection.appendChild(image);
         
         let name = document.createElement('elem');
         name.innerHTML = "<br> " + response.Title;
